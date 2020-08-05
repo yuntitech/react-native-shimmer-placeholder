@@ -16,6 +16,8 @@ declare module 'react-native-shimmer-placeholder' {
         backgroundColorBehindBorder?: string;
         hasBorder?: boolean;
         isInteraction?: boolean;
+        linearGradientStart?:{x: number, y: number};
+        linearGradientEnd?:{x: number, y: number};
     }
     export default class ShimmerPlaceHolder extends React.Component<Props, any> {
         getAnimated(): Animated.CompositeAnimation;
